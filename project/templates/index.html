@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplex Solver - Introduction</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #8e3636 0%, #5f2896 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 50px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .logo {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #667eea;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .features {
+            text-align: left;
+            margin: 30px 0;
+            padding: 0 20px;
+        }
+
+        .features li {
+            margin: 15px 0;
+            color: #555;
+            font-size: 1.1rem;
+        }
+
+        .features li::before {
+            content: "✓ ";
+            color: #4CAF50;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .start-btn {
+            background: linear-gradient(135deg, #b84c4c 0%, #7e39c2 100%);
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 20px;
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .start-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(102, 126, 234, 0.4);
+        }
+
+        .footer {
+            margin-top: 30px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🧮</div>
+        <h1>Simplex Method Solver</h1>
+        <p class="subtitle">
+            A powerful tool for solving linear programming problems using the Simplex Method. 
+            Get step-by-step solutions with detailed explanations.
+        </p>
+        
+        <div class="features">
+            <li>Solve maximization problems with two variables</li>
+            <li>Step-by-step tableau iterations</li>
+            <li>Visual pivot element highlighting</li>
+            <li>Fraction and decimal number support</li>
+            <li>Optimal solution detection</li>
+        </div>
+
+        <a href="{{url_for('main_page')}}" class="start-btn">
+            Start Solving ›
+        </a>
+    </div>
+
+    <div class="footer">
+        Linear Programming Problem Solver • Educational Tool
+    </div>
+</body>
+</html>
