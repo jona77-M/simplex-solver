@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,8 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #8e3636 0%, #5f2896 100%);
+            /* background: linear-gradient(135deg, #8e3636 0%, #5f2896 100%); */
+            background: rgb(241, 214, 214);
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -23,7 +25,7 @@
         }
 
         .container {
-            background: rgba(255, 255, 255, 0.95);
+            background: #de3535;
             backdrop-filter: blur(10px);
             border-radius: 20px;
             padding: 50px;
@@ -41,14 +43,14 @@
         }
 
         h1 {
-            color: #333;
+            color: #ffffff;
             font-size: 2.5rem;
             margin-bottom: 20px;
             font-weight: 700;
         }
 
         .subtitle {
-            color: #666;
+            color: #ffffff;
             font-size: 1.2rem;
             margin-bottom: 30px;
             line-height: 1.6;
@@ -62,7 +64,7 @@
 
         .features li {
             margin: 15px 0;
-            color: #555;
+            color: #ffffff;
             font-size: 1.1rem;
         }
 
@@ -74,7 +76,7 @@
         }
 
         .start-btn {
-            background: linear-gradient(135deg, #b84c4c 0%, #7e39c2 100%);
+            background: linear-gradient(135deg, #bea9a9 0%, #ef9f9f94 100%);
             color: white;
             padding: 15px 40px;
             text-decoration: none;
@@ -93,26 +95,40 @@
         }
 
         .footer {
-            margin-top: 30px;
-            color: rgba(255, 255, 255, 0.8);
+            margin-top: 10px;
+            color: rgba(0, 0, 0, 0.8);
             font-size: 0.9rem;
+        }
+
+        .footer {
+            margin-top: 10px;
+            color: rgba(0, 0, 0, 0.8);
+            font-size: 0.9rem;
+            
+        }
+
+        .footer a {
+            color: #000000;
+            text-decoration: underline;
+            font-weight: bold;
+            text-decoration: none;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="logo">🧮</div>
         <h1>Simplex Method Solver</h1>
         <p class="subtitle">
-            A powerful tool for solving linear programming problems using the Simplex Method. 
+            A powerful tool for solving linear programming problems using the Simplex Method.
             Get step-by-step solutions with detailed explanations.
         </p>
-        
+
         <div class="features">
             <li>Solve maximization problems with two variables</li>
-            <li>Step-by-step tableau iterations</li>
+            <li>Step-by-step Solutions</li>
             <li>Visual pivot element highlighting</li>
-            <li>Fraction and decimal number support</li>
             <li>Optimal solution detection</li>
         </div>
 
@@ -122,7 +138,9 @@
     </div>
 
     <div class="footer">
-        Linear Programming Problem Solver • Educational Tool
+        BSIT 2E •
+        <a href="{{ url_for('about_page') }}" class="group-link">Group 5</a>
     </div>
 </body>
+
 </html>

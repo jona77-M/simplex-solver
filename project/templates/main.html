@@ -35,21 +35,21 @@
             align-items: center;
             gap: 8px;
             padding: 10px 20px;
-            background: white;
-            border: 2px solid #e2e8f0;
+            background: rgb(255, 255, 255);
+            border: 2px solid #970000;
             border-radius: 8px;
-            color: #4a5568;
+            color: #000000;
             text-decoration: none;
             font-weight: 600;
-            font-size: 14px;
+            font-size: 15px;
             transition: all 0.3s ease;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
         }
 
         .back-btn:hover {
             background: #f7fafc;
-            border-color: #667eea;
-            color: #667eea;
+            border-color: #6c0808;
+            color: #5c0000;
             transform: translateY(-1px);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
@@ -59,7 +59,8 @@
             text-align: center;
             margin-bottom: 20px;
             padding: 20px;
-            background: white;
+            background: #de3535;
+            /* border: 2px solid #690000; */
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
         }
@@ -69,13 +70,13 @@
             font-size: 2.2rem;
             margin-bottom: 8px;
             font-weight: 700;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background:  #fcfcfc;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
         .header p {
-            color: #718096;
+            color: #ffffff;
             font-size: 1rem;
             max-width: 500px;
             margin: 0 auto;
@@ -119,7 +120,7 @@
         }
 
         .section-title i {
-            color: #667eea;
+            color: #da3c08;
             font-size: 1.2rem;
         }
 
@@ -150,13 +151,14 @@
 
         .input-field:focus {
             outline: none;
-            border-color: #667eea;
-            background: white;
+            border: 2px solid #de3535;
+            /* border-color: 2px solid #de3535; */
+            background:  #ffeaea;
             box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
         }
 
         .input-field::placeholder {
-            color: #a0aec0;
+            color: #7e848b;
         }
 
         /* Action Buttons */
@@ -183,7 +185,7 @@
         }
 
         .btn-primary {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #de3535;
             color: white;
         }
 
@@ -192,15 +194,15 @@
             box-shadow: 0 6px 20px rgba(102, 126, 234, 0.3);
         }
 
-        .btn-secondary {
+        /* .btn-secondary {
             background: linear-gradient(135deg, #4fd1c5 0%, #38b2ac 100%);
             color: white;
-        }
+        } */
 
-        .btn-secondary:hover {
+        /* .btn-secondary:hover {
             transform: translateY(-1px);
             box-shadow: 0 6px 20px rgba(79, 209, 197, 0.3);
-        }
+        } */
 
         .btn-outline {
             background: transparent;
@@ -223,55 +225,6 @@
             overflow-y: auto;
         }
 
-        /* Step Navigation */
-        .step-navigation {
-            display: flex;
-            gap: 8px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-        }
-
-        .step-btn {
-            padding: 10px 14px;
-            background: #f8fafc;
-            border: 2px solid #e2e8f0;
-            border-radius: 8px;
-            font-size: 12px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            color: #4a5568;
-        }
-
-        .step-btn.active {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border-color: #667eea;
-        }
-
-        .step-btn:hover:not(.active) {
-            background: #edf2f7;
-            border-color: #cbd5e0;
-        }
-
-        /* Step Content */
-        .step-content {
-            margin-bottom: 20px;
-        }
-
-        .step-header {
-            color: #2d3748;
-            margin-bottom: 15px;
-            font-size: 1.2rem;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
         /* Table Styles */
         .table-container {
             margin: 15px 0;
@@ -283,18 +236,20 @@
         table {
             border-collapse: collapse;
             text-align: center;
-            background: white;
+            /* background: white; */
+            background: #f9e3e3 ;
             width: 100%;
             font-size: 0.85rem;
         }
 
         /* Table Header Styles */
         th {
-            background: linear-gradient(135deg, #5a4fcf 0%, #3a2f96 100%) !important;
+            /* background: linear-gradient(135deg, #de3535 0%, #cd6969 100%) !important; */
+            background-color: #eb8484;
             color: white;
             padding: 10px 12px;
             font-weight: 600;
-            border: 1px solid #4a3fb5;
+            border: 1px solid #000000;
         }
 
         td {
@@ -303,25 +258,29 @@
             font-family: 'Consolas', monospace;
         }
 
-        /* Highlight Styles */
+        /* HIGHLIGHTS COLUMN ANS ROW */
+        
         .highlight-column {
-            background: linear-gradient(135deg, #fff9db 0%, #ffec99 100%) !important;
+            background-color: #eb8484;
+            /* background: linear-gradient(135deg, #fff9db 0%, #ffec99 100%) !important; */
             font-weight: 600;
-            color: #8a6d06;
-            border: 2px solid #ffd43b;
+            color: #000000;
+            /* border: 2px solid #ffd43b; */
         }
 
         .highlight-row {
-            background: linear-gradient(135deg, #fff9db 0%, #ffec99 100%) !important;
+            background:  #eb8484;
+            /* background: linear-gradient(135deg, #fff9db 0%, #ffec99 100%) !important; */
             font-weight: 600;
-            color: #8a6d06;
-            border: 2px solid #ffd43b;
+            color: #000000;
+            border: 2px solid #eb8484;
         }
 
         .pivot-cell {
             position: relative;
-            background: linear-gradient(135deg, #fff9db 0%, #ffec99 100%) !important;
-            color: #8a6d06;
+            background:  #eb8484;
+            /* background: linear-gradient(135deg, #fff9db 0%, #ffec99 100%) !important; */
+            color: #000000;
             font-weight: bold;
         }
 
@@ -332,11 +291,11 @@
             left: 50%;
             width: 30px;
             height: 30px;
-            border: 3px solid black;
+            border: 3px solid rgb(255, 255, 255);
             border-radius: 50%;
             transform: translate(-50%, -50%);
             pointer-events: none;
-            box-shadow: 0 0 0 1px #fff9db;
+            /* box-shadow: 0 0 0 1px #fff9db; */
         }
 
         /* Info Boxes */
@@ -362,7 +321,7 @@
 
         .step-info {
             background: #f8fafc;
-            border-left: 4px solid #667eea;
+            border: 2px solid  #e53e3e;
         }
 
         /* Solution Cards */
@@ -377,7 +336,7 @@
             background: #f8fafc;
             border-radius: 8px;
             padding: 15px;
-            border-left: 3px solid #667eea;
+            /* border-left: 3px solid #667eea; */
         }
 
         .solution-card h4 {
@@ -398,7 +357,23 @@
             margin: 0;
         }
 
-        /* Utility Classes */
+/* 
+        .step-header .fa-bullseye{
+            color: #e53e3e !important ;
+        } */
+
+       
+        .step-header {
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        
         .text-muted {
             color: #718096;
             font-style: italic;
@@ -435,6 +410,49 @@
             border-radius: 3px;
         }
 
+        /* Step Container */
+        .step-container {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .step-container:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        /* Iteration Header */
+        .iteration-header {
+            background-color:   #de3535;
+            /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .iteration-header i {
+            font-size: 1.2rem;
+        }
+
+        /* Step Counter */
+        /* .step-counter {
+            display: inline-block;
+            background: #4a5568;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-left: 10px;
+        } */
+
         /* Responsive */
         @media (max-width: 768px) {
             body {
@@ -464,17 +482,8 @@
                 padding: 15px;
             }
             
-            .step-navigation {
-                flex-direction: column;
-            }
-            
             .solution-grid {
                 grid-template-columns: 1fr;
-            }
-
-            .step-btn {
-                font-size: 11px;
-                padding: 8px 12px;
             }
         }
 
@@ -506,7 +515,6 @@
     </style>
 </head>
 <body>
-    <!-- Rest of your HTML body remains exactly the same -->
     <div class="app-container">
         <!-- Back Button -->
         <div class="back-button">
@@ -527,12 +535,12 @@
             <!-- Left: Problem Input -->
             <div class="input-section">
                 <h2 class="section-title">
-                    <i class="fas fa-edit"></i>Problem Setup
+                    <i class="fas fa-edit"></i>Problem
                 </h2>
                 
                 <form action="/solve" method="POST">
                     <div class="input-group">
-                        <label class="input-label">Objective Function (Maximize Z)</label>
+                        <label class="input-label">Objective Function</label>
                         <textarea name="objective" class="input-field" placeholder="Example: 120x + 100y">{{ objective if objective }}</textarea>
                     </div>
 
@@ -547,19 +555,13 @@
                     </div>
 
                     <div class="input-group">
-                        <label class="input-label">Non-negativity Conditions</label>
+                        <label class="input-label">Non negative</label>
                         <textarea name="nonneg" class="input-field" placeholder="Example: x >= 0, y >= 0">{{ nonneg if nonneg }}</textarea>
                     </div>
 
                     <div class="action-buttons">
                         <button type="submit" name="action" value="solve" class="btn btn-primary">
-                            <i class="fas fa-play-circle"></i>Solve Linear Program
-                        </button>
-                        <button type="submit" name="action" value="standard" class="btn btn-secondary">
-                            <i class="fas fa-code"></i>Convert to Standard Form
-                        </button>
-                        <button type="submit" name="action" value="tableau1" class="btn btn-outline">
-                            <i class="fas fa-table"></i>Generate Initial Tableau
+                            <i class="fas fa-play-circle"></i>Solve the Problem
                         </button>
                     </div>
                 </form>
@@ -567,444 +569,287 @@
 
             <!-- Right: Results & Steps -->
             <div class="results-section">
-                {% if standard_form or tableau1 or tableau2 or tableau2_highlight or tableau2_ratio %}
-                <!-- Step Navigation -->
-                <div class="step-navigation">
-                    <button class="step-btn {% if standard_form %}active{% endif %}" onclick="showStep('standard')">
-                        <i class="fas fa-code"></i>Standard Form
-                    </button>
-                    <button class="step-btn {% if tableau1 %}active{% endif %}" onclick="showStep('tableau1')">
-                        <i class="fas fa-table"></i>Tableau 1
-                    </button>
-                    <button class="step-btn {% if tableau_highlight or tableau2_highlight %}active{% endif %}" onclick="showStep('highlight')">
-                        <i class="fas fa-search"></i>Pivot Column
-                    </button>
-                    <button class="step-btn {% if tableau_ratio or tableau2_ratio %}active{% endif %}" onclick="showStep('ratio')">
-                        <i class="fas fa-ruler"></i>Pivot Row
-                    </button>
-                    <button class="step-btn {% if solution1_header %}active{% endif %}" onclick="showStep('solutions')">
-                        <i class="fas fa-calculator"></i>Pivot Operations
-                    </button>
-                    <button class="step-btn {% if tableau2 %}active{% endif %}" onclick="showStep('tableau2')">
-                        <i class="fas fa-sync-alt"></i>{% if iteration_count and iteration_count > 1 %}Tableau {{ iteration_count }}{% else %}Tableau 2{% endif %}
-                    </button>
-                </div>
+                {% if all_steps and display_all_steps %}
 
-                <!-- Problem Statement -->
-                {% if objective %}
-                <div class="step-info info-box">
-                    <h4><i class="fas fa-bullseye"></i> Problem Statement</h4>
-                    <p><strong>Maximize:</strong> Z = {{ objective }}</p>
-                    <p><strong>Subject to:</strong></p>
-                    <p>{{ constraint1 }}</p>
-                    <p>{{ constraint2 }}</p>
-                    <p>{{ nonneg }}</p>
-                </div>
-                {% endif %}
+                    <!-- Display all steps at once -->
+                    <!-- {% set step_counter = 1 %} -->
+                    {% set current_iteration = 1 %}
+                    
+                    {% for step in all_steps %}
+                        {% if step.type == 'problem_statement' %}
 
-                <!-- Step 1: Standard Form -->
-                {% if standard_form %}
-                <div class="step-content" id="step-standard">
-                    <h3 class="step-header"><i class="fas fa-code"></i> Step 1: Standard Form</h3>
-                    <div class="info-box">
-                        <pre style="font-family: 'Consolas', monospace; font-size: 0.9rem; line-height: 1.4; margin: 0;">{{ standard_form }}</pre>
-                    </div>
-                    <form action="/solve" method="POST" class="mt-3">
-                        <input type="hidden" name="objective" value="{{ objective }}">
-                        <input type="hidden" name="constraint1" value="{{ constraint1 }}">
-                        <input type="hidden" name="constraint2" value="{{ constraint2 }}">
-                        <input type="hidden" name="nonneg" value="{{ nonneg }}">
-                        <button type="submit" name="action" value="tableau1" class="btn btn-secondary">
-                            <i class="fas fa-arrow-right"></i>Next: Initial Tableau
-                        </button>
-                    </form>
-                </div>
-                {% endif %}
-
-                <!-- Step 2: Initial Tableau -->
-                {% if tableau1 %}
-                <div class="step-content" id="step-tableau1">
-                    <h3 class="step-header"><i class="fas fa-table"></i> Step 2: Initial Tableau</h3>
-                    <div class="table-container">
-                        <table>
-                            <tr>
-                                <th>B.V</th>
-                                <th>x</th>
-                                <th>y</th>
-                                <th>S₁</th>
-                                <th>S₂</th>
-                                <th>RHS</th>
-                            </tr>
-                            {% for row in tableau1 %}
-                            <tr>
-                                {% for cell in row %}
-                                <td>{{ cell|safe }}</td>
-                                {% endfor %}
-                            </tr>
-                            {% endfor %}
-                        </table>
-                    </div>
-                    <form action="/solve" method="POST" class="mt-3">
-                        <input type="hidden" name="objective" value="{{ objective }}">
-                        <input type="hidden" name="constraint1" value="{{ constraint1 }}">
-                        <input type="hidden" name="constraint2" value="{{ constraint2 }}">
-                        <input type="hidden" name="nonneg" value="{{ nonneg }}">
-                        <button type="submit" name="action" value="highlight" class="btn btn-secondary">
-                            <i class="fas fa-search"></i>Find Pivotal Column
-                        </button>
-                    </form>
-                </div>
-                {% endif %}
-
-                <!-- Step 3: Pivot Column for Tableau 1 -->
-                {% if tableau_highlight and not tableau2_highlight %}
-                <div class="step-content" id="step-highlight">
-                    <h3 class="step-header"><i class="fas fa-search"></i> Step 3: Identify Pivot Column</h3>
-                    <p class="text-muted mb-3">Find the most negative value in the objective row</p>
-                    <div class="table-container">
-                        <table>
-                            <tr>
-                                <th {% if pivot_index==0 %} class="highlight-column" {% endif %}>B.V</th>
-                                <th {% if pivot_index==1 %} class="highlight-column" {% endif %}>x</th>
-                                <th {% if pivot_index==2 %} class="highlight-column" {% endif %}>y</th>
-                                <th {% if pivot_index==3 %} class="highlight-column" {% endif %}>S₁</th>
-                                <th {% if pivot_index==4 %} class="highlight-column" {% endif %}>S₂</th>
-                                <th {% if pivot_index==5 %} class="highlight-column" {% endif %}>RHS</th>
-                            </tr>
-                            {% for row in tableau_highlight %}
-                            <tr>
-                                {% for i in range(row|length) %}
-                                <td {% if pivot_index==i %} class="highlight-column" {% endif %}>
-                                    {{ row[i]|safe }}
-                                </td>
-                                {% endfor %}
-                            </tr>
-                            {% endfor %}
-                        </table>
-                    </div>
-                    <form action="/solve" method="POST" class="mt-3">
-                        <input type="hidden" name="objective" value="{{ objective }}">
-                        <input type="hidden" name="constraint1" value="{{ constraint1 }}">
-                        <input type="hidden" name="constraint2" value="{{ constraint2 }}">
-                        <input type="hidden" name="nonneg" value="{{ nonneg }}">
-                        <button type="submit" name="action" value="pivotrow" class="btn btn-secondary">
-                            <i class="fas fa-ruler"></i>Find Pivotal Row
-                        </button>
-                    </form>
-                </div>
-                {% endif %}
-
-                <!-- COMMENTED OUT: Step 3.5: Pivot Column for Iterations -->
-                {% if tableau2_highlight %}
-                <!--
-                <div class="step-content" id="step-highlight">
-                    <h3 class="step-header"><i class="fas fa-search"></i> 
-                        {% if iteration_count and iteration_count > 1 %}
-                            Step {{ 2 + (iteration_count - 1) * 3 }}: Identify Pivot Column for Tableau {{ iteration_count }}
-                        {% else %}
-                            Step 3: Identify Pivot Column
-                        {% endif %}
-                    </h3>
-                    <p class="text-muted mb-3">Find the most negative value in the objective row</p>
-                    <div class="table-container">
-                        <table>
-                            <tr>
-                                <th {% if pivot_index==0 %} class="highlight-column" {% endif %}>B.V</th>
-                                <th {% if pivot_index==1 %} class="highlight-column" {% endif %}>x</th>
-                                <th {% if pivot_index==2 %} class="highlight-column" {% endif %}>y</th>
-                                <th {% if pivot_index==3 %} class="highlight-column" {% endif %}>S₁</th>
-                                <th {% if pivot_index==4 %} class="highlight-column" {% endif %}>S₂</th>
-                                <th {% if pivot_index==5 %} class="highlight-column" {% endif %}>RHS</th>
-                            </tr>
-                            {% for row in tableau2_highlight %}
-                            <tr>
-                                {% for i in range(row|length) %}
-                                <td {% if pivot_index==i %} class="highlight-column" {% endif %}>
-                                    {{ row[i]|safe }}
-                                </td>
-                                {% endfor %}
-                            </tr>
-                            {% endfor %}
-                        </table>
-                    </div>
-                    <form action="/solve" method="POST" class="mt-3">
-                        <input type="hidden" name="objective" value="{{ objective }}">
-                        <input type="hidden" name="constraint1" value="{{ constraint1 }}">
-                        <input type="hidden" name="constraint2" value="{{ constraint2 }}">
-                        <input type="hidden" name="nonneg" value="{{ nonneg }}">
-                        <input type="hidden" name="tableau_data" value="{{ current_tableau_data }}">
-                        <button type="submit" name="action" value="tableau2_pivotrow" class="btn btn-secondary">
-                            <i class="fas fa-ruler"></i>Find Pivotal Row
-                        </button>
-                    </form>
-                </div>
-                -->
-                {% endif %}
-
-                <!-- Step 4: Pivot Row for Tableau 1 -->
-                {% if tableau_ratio and not tableau2_ratio %}
-                <div class="step-content" id="step-ratio">
-                    <h3 class="step-header"><i class="fas fa-ruler"></i> Step 4: Determine Pivot Row</h3>
-                    <p class="text-muted mb-3">Calculate ratios to find the pivot element</p>
-                    <div class="table-container">
-                        <table>
-                            <tr>
-                                <th {% if pivot_index==0 %} class="highlight-column" {% endif %}>B.V</th>
-                                <th {% if pivot_index==1 %} class="highlight-column" {% endif %}>x</th>
-                                <th {% if pivot_index==2 %} class="highlight-column" {% endif %}>y</th>
-                                <th {% if pivot_index==3 %} class="highlight-column" {% endif %}>S₁</th>
-                                <th {% if pivot_index==4 %} class="highlight-column" {% endif %}>S₂</th>
-                                <th {% if pivot_index==5 %} class="highlight-column" {% endif %}>RHS</th>
-                                <th>Ratio</th>
-                            </tr>
-                            {% for row in tableau_ratio %}
-                            {% set row_index = loop.index0 %}
-                            <tr>
-                                {% for i in range(row|length) %}
-                                    {% if i < 6 %}
-                                    <td class="
-                                        {% if i == pivot_index %} highlight-column {% endif %}
-                                        {% if pivot_row_index is not none and row_index == pivot_row_index %} highlight-row {% endif %}
-                                        {% if pivot_row_index is not none and row_index == pivot_row_index and i == pivot_index %} pivot-cell {% endif %}
-                                    ">
-                                        {{ row[i]|safe }}
-                                    </td>
-                                    {% else %}
-                                    <td>{{ row[i]|safe }}</td>
+                            <!-- Problem Statement -->
+                            <div class="step-container">
+                                <div class="step-info info-box">
+                                    <h3 class="step-header">
+                                        <i class="fas fa-bullseye"></i> Problem Statement
+                                        <!-- <span class="step-counter">Step {{ step_counter }}</span> -->
+                                    </h3>
+                                    <p><strong>Maximize:</strong> Z = {{ step.data.objective }}</p>
+                                    <p><strong>Subject to:</strong></p>
+                                    <p>{{ step.data.constraint1 }}</p>
+                                    <p>{{ step.data.constraint2 }}</p>
+                                    <p>{{ step.data.nonneg }}</p>
+                                </div>
+                            </div>
+                            <!-- {% set step_counter = step_counter + 1 %} -->
+                            
+                        {% elif step.type == 'standard_form' %}
+                            <!-- Standard Form -->
+                            <div class="step-container">
+                                <div class="step-info info-box">
+                                    <h3 class="step-header">
+                                        <i class="fas fa-code"></i> Standard Form
+                                        <!-- <span class="step-counter">Step {{ step_counter }}</span> -->
+                                    </h3>
+                                    <pre style="font-family: 'Consolas', monospace; font-size: 0.9rem; line-height: 1.4; margin: 0; white-space: pre-wrap;">{{ step.data }}</pre>
+                                </div>
+                            </div>
+                            <!-- {% set step_counter = step_counter + 1 %} -->
+                            
+                        {% elif step.type == 'initial_tableau' %}
+                            <!-- Initial Tableau -->
+                            <div class="step-container">
+                                <div class="iteration-header">
+                                    <i class="fas fa-redo"></i> Process {{ current_iteration }}
+                                </div>
+                                <div class="step-info info-box">
+                                    <h3 class="step-header">
+                                        <i class="fas fa-table"></i> Initial Tableau
+                                        <!-- <span class="step-counter">Step {{ step_counter }}</span> -->
+                                    </h3>
+                                    <div class="table-container">
+                                        <table>
+                                            <tr>
+                                                <th>B.V</th>
+                                                <th>x</th>
+                                                <th>y</th>
+                                                <th>S₁</th>
+                                                <th>S₂</th>
+                                                <th>RHS</th>
+                                            </tr>
+                                            {% for row in step.data %}
+                                            <tr>
+                                                {% for cell in row %}
+                                                <td>{{ cell|safe }}</td>
+                                                {% endfor %}
+                                            </tr>
+                                            {% endfor %}
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- {% set step_counter = step_counter + 1 %} -->
+                            
+                        {% elif step.type == 'pivot_column' %}
+                            <!-- Pivot Column -->
+                            <div class="step-container">
+                                <div class="iteration-header">
+                                    <i class="fas fa-redo"></i> Process {{ step.data.iteration }}
+                                </div>
+                                <div class="step-info info-box">
+                                    <h3 class="step-header">
+                                        <i class="fas fa-search"></i> Pivotal Column
+                                        <!-- <span class="step-counter">Step {{ step_counter }}</span> -->
+                                    </h3>
+                                    <p class="text-muted mb-3">Most negative value in the objective row</p>
+                                    <div class="table-container">
+                                        <table>
+                                            <tr>
+                                                <th {% if step.data.pivot_index==0 %} class="highlight-column" {% endif %}>B.V</th>
+                                                <th {% if step.data.pivot_index==1 %} class="highlight-column" {% endif %}>x</th>
+                                                <th {% if step.data.pivot_index==2 %} class="highlight-column" {% endif %}>y</th>
+                                                <th {% if step.data.pivot_index==3 %} class="highlight-column" {% endif %}>S₁</th>
+                                                <th {% if step.data.pivot_index==4 %} class="highlight-column" {% endif %}>S₂</th>
+                                                <th {% if step.data.pivot_index==5 %} class="highlight-column" {% endif %}>RHS</th>
+                                            </tr>
+                                            {% for row in step.data.tableau %}
+                                            <tr>
+                                                {% for i in range(row|length) %}
+                                                <td {% if step.data.pivot_index==i %} class="highlight-column" {% endif %}>
+                                                    {{ row[i]|safe }}
+                                                </td>
+                                                {% endfor %}
+                                            </tr>
+                                            {% endfor %}
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- {% set step_counter = step_counter + 1 %} -->
+                            
+                        {% elif step.type == 'pivot_row' %}
+                            <!-- Pivot Row -->
+                            <div class="step-container">
+                                <div class="iteration-header">
+                                    <i class="fas fa-redo"></i> Process {{ step.data.iteration }}
+                                </div>
+                                <div class="step-info info-box">
+                                    <h3 class="step-header">
+                                        <i class="fas fa-ruler"></i> Pivotal Row
+                                        <!-- <span class="step-counter">Step {{ step_counter }}</span> -->
+                                    </h3>
+                                    <p class="text-muted mb-3">Get the smallest ratio of the positive entries in the pivotal column with RHS entries</p>
+                                    <div class="table-container">
+                                        <table>
+                                            <tr>
+                                                <th {% if step.data.pivot_index==0 %} class="highlight-column" {% endif %}>B.V</th>
+                                                <th {% if step.data.pivot_index==1 %} class="highlight-column" {% endif %}>x</th>
+                                                <th {% if step.data.pivot_index==2 %} class="highlight-column" {% endif %}>y</th>
+                                                <th {% if step.data.pivot_index==3 %} class="highlight-column" {% endif %}>S₁</th>
+                                                <th {% if step.data.pivot_index==4 %} class="highlight-column" {% endif %}>S₂</th>
+                                                <th {% if step.data.pivot_index==5 %} class="highlight-column" {% endif %}>RHS</th>
+                                                <th>Ratio</th>
+                                            </tr>
+                                            {% for row in step.data.tableau_with_ratios %}
+                                            {% set row_index = loop.index0 %}
+                                            <tr>
+                                                {% for i in range(row|length) %}
+                                                    {% if i < 6 %}
+                                                    <td class="
+                                                        {% if i == step.data.pivot_index %} highlight-column {% endif %}
+                                                        {% if step.data.pivot_row_index is not none and row_index == step.data.pivot_row_index %} highlight-row {% endif %}
+                                                        {% if step.data.pivot_row_index is not none and row_index == step.data.pivot_row_index and i == step.data.pivot_index %} pivot-cell {% endif %}
+                                                    ">
+                                                        {{ row[i]|safe }}
+                                                    </td>
+                                                    {% else %}
+                                                    <td>{{ row[i]|safe }}</td>
+                                                    {% endif %}
+                                                {% endfor %}
+                                            </tr>
+                                            {% endfor %}
+                                        </table>
+                                    </div>
+                                    {% if step.data.pivot_row_index is not none %}
+                                    <div class="info-box mt-3">
+                                        <strong>Pivot Element:</strong> {{ step.data.pivot_element }} 
+                                        at intersection of {{ step.data.tableau_with_ratios[step.data.pivot_row_index][0] }} and 
+                                        {% if step.data.pivot_index == 1 %}x{% elif step.data.pivot_index == 2 %}y{% elif step.data.pivot_index == 3 %}S₁{% elif step.data.pivot_index == 4 %}S₂{% endif %}
+                                    </div>
                                     {% endif %}
-                                {% endfor %}
-                            </tr>
-                            {% endfor %}
-                        </table>
-                    </div>
-                    {% if pivot_row_index is not none %}
-                    <div class="info-box mt-3">
-                        <strong>Pivot Element:</strong> {{ tableau_ratio[pivot_row_index][pivot_index] }} 
-                        at intersection of {{ tableau_ratio[pivot_row_index][0] }} and 
-                        {% if pivot_index == 1 %}x{% elif pivot_index == 2 %}y{% elif pivot_index == 3 %}S₁{% elif pivot_index == 4 %}S₂{% endif %}
-                    </div>
-                    {% endif %}
-                    
-                    {% if show_solution_button %}
-                    <form action="/solve" method="POST" class="mt-3">
-                        <input type="hidden" name="objective" value="{{ objective }}">
-                        <input type="hidden" name="constraint1" value="{{ constraint1 }}">
-                        <input type="hidden" name="constraint2" value="{{ constraint2 }}">
-                        <input type="hidden" name="nonneg" value="{{ nonneg }}">
-                        <button type="submit" name="action" value="solution" class="btn btn-primary">
-                            <i class="fas fa-calculator"></i>Perform Pivot Operation
-                        </button>
-                    </form>
-                    {% endif %}
-                </div>
-                {% endif %}
-
-                <!-- Step 4.5: Pivot Row for Iterations -->
-                {% if tableau2_ratio %}
-                <div class="step-content" id="step-ratio">
-                    <h3 class="step-header"><i class="fas fa-ruler"></i> 
-                        {% if iteration_count and iteration_count > 1 %}
-                            Step {{ 3 + (iteration_count - 1) * 3 }}: Determine Pivot Row for Tableau {{ iteration_count }}
-                        {% else %}
-                            Step 4: Determine Pivot Row
-                        {% endif %}
-                    </h3>
-                    <p class="text-muted mb-3">Calculate ratios to find the pivot element</p>
-                    <div class="table-container">
-                        <table>
-                            <tr>
-                                <th {% if pivot_index==0 %} class="highlight-column" {% endif %}>B.V</th>
-                                <th {% if pivot_index==1 %} class="highlight-column" {% endif %}>x</th>
-                                <th {% if pivot_index==2 %} class="highlight-column" {% endif %}>y</th>
-                                <th {% if pivot_index==3 %} class="highlight-column" {% endif %}>S₁</th>
-                                <th {% if pivot_index==4 %} class="highlight-column" {% endif %}>S₂</th>
-                                <th {% if pivot_index==5 %} class="highlight-column" {% endif %}>RHS</th>
-                                <th>Ratio</th>
-                            </tr>
-                            {% for row in tableau2_ratio %}
-                            {% set row_index = loop.index0 %}
-                            <tr>
-                                {% for i in range(row|length) %}
-                                    {% if i < 6 %}
-                                    <td class="
-                                        {% if i == pivot_index %} highlight-column {% endif %}
-                                        {% if pivot_row_index is not none and row_index == pivot_row_index %} highlight-row {% endif %}
-                                        {% if pivot_row_index is not none and row_index == pivot_row_index and i == pivot_index %} pivot-cell {% endif %}
-                                    ">
-                                        {{ row[i]|safe }}
-                                    </td>
-                                    {% else %}
-                                    <td>{{ row[i]|safe }}</td>
+                                </div>
+                            </div>
+                            <!-- {% set step_counter = step_counter + 1 %} -->
+                            
+                        {% elif step.type == 'pivot_operations' %}
+                            <!-- Pivot Operations -->
+                            <div class="step-container">
+                                <div class="iteration-header">
+                                    <i class="fas fa-redo"></i> Process {{ step.data.iteration }}
+                                </div>
+                                <div class="step-info info-box">
+                                    <h3 class="step-header">
+                                        <i class="fas fa-calculator"></i> Pivotal Elimination
+                                        <!-- <span class="step-counter">Step {{ step_counter }}</span> -->
+                                    </h3>
+                                    
+                                    <div class="solution-grid">
+                                        <div class="solution-card">
+                                            <h4>{{ step.data.solution1_header }}</h4>
+                                            <pre>{% for step_line in step.data.solution1 %}{{ step_line }}
+{% endfor %}</pre>
+                                        </div>
+                                        
+                                        <div class="solution-card">
+                                            <h4>{{ step.data.solution2_header }}</h4>
+                                            <pre>{% for step_line in step.data.solution2 %}{{ step_line }}
+{% endfor %}</pre>
+                                        </div>
+                                        
+                                        <div class="solution-card">
+                                            <h4>{{ step.data.solution3_header }}</h4>
+                                            <pre>{% for step_line in step.data.solution3 %}{{ step_line }}
+{% endfor %}</pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- {% set step_counter = step_counter + 1 %} -->
+                            
+                        {% elif step.type == 'new_tableau' %}
+                            <!-- New Tableau -->
+                            <div class="step-container">
+                                <div class="step-info info-box">
+                                    <h3 class="step-header">
+                                        <i class="fas fa-sync-alt"></i> Tableau {{ step.data.iteration_count }}
+                                        <!-- <span class="step-counter">Step {{ step_counter }}</span> -->
+                                    </h3>
+                                    <div class="table-container">
+                                        <table>
+                                            <tr>
+                                                <th>B.V</th>
+                                                <th>x</th>
+                                                <th>y</th>
+                                                <th>S₁</th>
+                                                <th>S₂</th>
+                                                <th>RHS</th>
+                                            </tr>
+                                            {% for row in step.data.tableau %}
+                                            <tr>
+                                                {% for cell in row %}
+                                                <td>{{ cell|safe }}</td>
+                                                {% endfor %}
+                                            </tr>
+                                            {% endfor %}
+                                        </table>
+                                    </div>
+                                    
+                                    {% if step.data.has_negative_in_z and not loop.last %}
+                                    <div class="iteration-info info-box mt-3">
+                                        <h4><i class="fas fa-info-circle"></i> Repeat the Process</h4>
+                                        <p>There are still negative integer in z row.</p>
+                                    </div>
+                                    {% elif not step.data.has_negative_in_z %}
+                                    <div class="optimal-solution info-box mt-3">
+                                        <h4><i class="fas fa-check-circle"></i> Optimal Solution Reached</h4>
+                                        <p>No negative integer in z row. The current solution is optimal.</p>
+                                        <p><strong>Final Tableau:</strong> Tableau {{ step.data.iteration_count }}</p>
+                                    </div>
                                     {% endif %}
-                                {% endfor %}
-                            </tr>
-                            {% endfor %}
-                        </table>
-                    </div>
-                    {% if pivot_row_index is not none %}
-                    <div class="info-box mt-3">
-                        <strong>Pivot Element:</strong> {{ tableau2_ratio[pivot_row_index][pivot_index] }} 
-                        at intersection of {{ tableau2_ratio[pivot_row_index][0] }} and 
-                        {% if pivot_index == 1 %}x{% elif pivot_index == 2 %}y{% elif pivot_index == 3 %}S₁{% elif pivot_index == 4 %}S₂{% endif %}
-                    </div>
-                    {% endif %}
-                    
-                    {% if show_solution_button %}
-                    <form action="/solve" method="POST" class="mt-3">
-                        <input type="hidden" name="objective" value="{{ objective }}">
-                        <input type="hidden" name="constraint1" value="{{ constraint1 }}">
-                        <input type="hidden" name="constraint2" value="{{ constraint2 }}">
-                        <input type="hidden" name="nonneg" value="{{ nonneg }}">
-                        <input type="hidden" name="tableau_data" value="{{ current_tableau_data }}">
-                        <button type="submit" name="action" value="tableau2_solution" class="btn btn-primary">
-                            <i class="fas fa-calculator"></i>Perform Pivot Operation
-                        </button>
-                    </form>
-                    {% endif %}
-                </div>
-                {% endif %}
-
-                <!-- Step 5: Solutions -->
-                {% if solution1_header %}
-                <div class="step-content" id="step-solutions">
-                    <h3 class="step-header"><i class="fas fa-calculator"></i> 
-                        {% if iteration_count and iteration_count > 1 %}
-                            Step {{ 4 + (iteration_count - 1) * 3 }}: Pivot Operations for Tableau {{ iteration_count }}
-                        {% else %}
-                            Step 5: Pivot Operations
+                                </div>
+                            </div>
+                            <!-- {% set step_counter = step_counter + 1 %} -->
+                            {% set current_iteration = step.data.iteration_count %}
                         {% endif %}
-                    </h3>
+                    {% endfor %}
                     
-                    <div class="solution-grid">
-                        <div class="solution-card">
-                            <h4>{{ solution1_header }}</h4>
-                            <pre>{% for step in solution1 %}{{ step }}
-{% endfor %}</pre>
-                        </div>
-                        
-                        <div class="solution-card">
-                            <h4>{{ solution2_header }}</h4>
-                            <pre>{% for step in solution2 %}{{ step }}
-{% endfor %}</pre>
-                        </div>
-                        
-                        <div class="solution-card">
-                            <h4>{{ solution3_header }}</h4>
-                            <pre>{% for step in solution3 %}{{ step }}
-{% endfor %}</pre>
+                {% elif objective %}
+                    <!-- Display only problem statement when no solution yet -->
+                    <div class="step-container">
+                        <div class="step-info info-box">
+                            <h3 class="step-header"><i class="fas fa-bullseye"></i> Problem Statement</h3>
+                            <p><strong>Maximize:</strong> Z = {{ objective }}</p>
+                            <p><strong>Subject to:</strong></p>
+                            <p>{{ constraint1 }}</p>
+                            <p>{{ constraint2 }}</p>
+                            <p>{{ nonneg }}</p>
                         </div>
                     </div>
-
-                    {% if tableau2 and has_negative_in_z %}
-                    <div class="mt-3">
-                        <form action="/solve" method="POST">
-                            <input type="hidden" name="objective" value="{{ objective }}">
-                            <input type="hidden" name="constraint1" value="{{ constraint1 }}">
-                            <input type="hidden" name="constraint2" value="{{ constraint2 }}">
-                            <input type="hidden" name="nonneg" value="{{ nonneg }}">
-                            <input type="hidden" name="tableau_data" value="{{ current_tableau_data }}">
-                            <button type="submit" name="action" value="tableau2_highlight" class="btn btn-primary">
-                                <i class="fas fa-arrow-right"></i>Continue to {% if next_iteration %}Tableau {{ next_iteration }}{% else %}Tableau 2{% endif %}
-                            </button>
-                        </form>
-                    </div>
-                    {% endif %}
-                </div>
-                {% endif %}
-
-                <!-- Step 6: Tableau 2 -->
-                {% if tableau2 %}
-                <div class="step-content" id="step-tableau2">
-                    <h3 class="step-header"><i class="fas fa-sync-alt"></i> 
-                        {% if iteration_count and iteration_count > 1 %}
-                            Step {{ 5 + (iteration_count - 1) * 3 }}: Tableau {{ iteration_count }}
-                        {% else %}
-                            Step 6: Tableau 2
-                        {% endif %}
-                    </h3>
-                    <div class="table-container">
-                        <table>
-                            <tr>
-                                <th>B.V</th>
-                                <th>x</th>
-                                <th>y</th>
-                                <th>S₁</th>
-                                <th>S₂</th>
-                                <th>RHS</th>
-                            </tr>
-                            {% for row in tableau2 %}
-                            <tr>
-                                {% for cell in row %}
-                                <td>{{ cell|safe }}</td>
-                                {% endfor %}
-                            </tr>
-                            {% endfor %}
-                        </table>
+                    
+                    <div class="text-center" style="padding: 40px 20px; color: #7f8c8d;">
+                        <h3><i class="fas fa-calculator"></i> Ready to Solve</h3>
+                        <p>Click "Solve Linear Program" to see the complete solution.</p>
                     </div>
                     
-                    {% if has_negative_in_z %}
-                    <div class="iteration-info info-box mt-3">
-                        <h4><i class="fas fa-info-circle"></i> Iteration Required</h4>
-                        <p>There are still negative values in the objective row. Continue with another iteration.</p>
-                        <form action="/solve" method="POST" class="mt-3">
-                            <input type="hidden" name="objective" value="{{ objective }}">
-                            <input type="hidden" name="constraint1" value="{{ constraint1 }}">
-                            <input type="hidden" name="constraint2" value="{{ constraint2 }}">
-                            <input type="hidden" name="nonneg" value="{{ nonneg }}">
-                            <input type="hidden" name="tableau_data" value="{{ current_tableau_data }}">
-                            <button type="submit" name="action" value="tableau2_highlight" class="btn btn-primary">
-                                <i class="fas fa-redo"></i>Continue to {% if next_iteration %}Tableau {{ next_iteration }}{% else %}Tableau 3{% endif %}
-                            </button>
-                        </form>
-                    </div>
-                    {% else %}
-                    <div class="optimal-solution info-box mt-3">
-                        <h4><i class="fas fa-check-circle"></i> Optimal Solution Reached!</h4>
-                        <p>No negative values in the objective row. The current solution is optimal.</p>
-                        {% if iteration_count and iteration_count > 1 %}
-                        <p><strong>Final Tableau:</strong> Tableau {{ iteration_count }}</p>
-                        {% endif %}
-                    </div>
-                    {% endif %}
-                </div>
-                {% endif %}
-
                 {% else %}
-                <!-- Empty State -->
-                <div class="text-center" style="padding: 40px 20px; color: #7f8c8d;">
-                    <h3><i class="fas fa-calculator"></i> Start Solving</h3>
-                    <p>Enter your linear programming problem on the left and click "Solve" to begin.</p>
-                </div>
+                    <!-- Empty State -->
+                    <div class="text-center" style="padding: 40px 20px; color: #7f8c8d;">
+                        <h3><i class="fas fa-calculator"></i> Start Solving</h3>
+                        <p>Enter your linear programming problem on the left and click "Solve" to begin.</p>
+                    </div>
                 {% endif %}
             </div>
         </div>
     </div>
 
     <script>
-        function showStep(step) {
-            const steps = document.querySelectorAll('.step-content');
-            steps.forEach(step => step.style.display = 'none');
-            
-            const activeStep = document.getElementById('step-' + step);
-            if (activeStep) {
-                activeStep.style.display = 'block';
-            }
-        }
-
-        // Auto-scroll to bottom
         window.onload = function () {
             const resultBox = document.querySelector('.results-section');
             if (resultBox) {
                 resultBox.scrollTop = resultBox.scrollHeight;
             }
-            
-            // Show first step by default
-            const firstStep = document.querySelector('.step-content');
-            if (firstStep) {
-                firstStep.style.display = 'block';
-            }
         };
     </script>
 </body>
 </html>
-
